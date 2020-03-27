@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+<script src="jquery.min.js"></script>
+</head>
+
+<body>
+<div id="content" >
+
+<div id="mon" style="width: 100%; background-color: red; height: 20px;">
+<p> monday</p>
+</div>
+
+<div id="tue" style="width: 100%; background-color: blue; height: 20px;">
+<p> tuesday </p>
+</div>
+
+<div id="wed" style="width: 100%; background-color: yellow; height: 20px;">
+<p>Wednesday</p>
+</div>
+</div>
+
+<div id="thu" style="width: 100%; background-color: green; height: 20px;">
+<p> Thursday </p>
+</div>
+
+<div id="fri" style="width: 100%; background-color: orange; height: 20px;">
+<p> Friday </p>
+</div>
+
+<div id="sat" style="width: 100%; background-color: purple; height: 20px;">
+<p> Saturday</p>
+</div>
+
+<div id="sun" style="width: 100%; background-color: rgb(128, 0, 0); height: 20px;">
+<p> Sunday</p>
+
+</div>
+
+
+
+
+
+<script src="javas.js">
+</script>
+
+<script>
+var dateTime = new Date().getHours()
+console.log(dateTime)
+
+var date = new Date().getDay()
+console.log(date)
+
+$(document).ready(function changeday(){
+if ( date >= 4 ){
+$("#sun").after($("#mon"));
+$("#mon").after($("#tue"));
+$("#tue").after($("#wed"));
+}
+
+if (date < 4 && dateTime >= 17){
+ $("#thu").before($("#wed"));
+ $("#wed").before($("#tue"));
+ $("#tue").before($("#mon"));
+}
+});
+
+
+
+</script>
