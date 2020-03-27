@@ -17,7 +17,7 @@ console.log("will be retrieving data soon and wil grab the sql from the client")
     var con = mysql.createConnection({
       host: "35.193.191.190",
       user: "grant",
-      password: "Popcorn!1"
+      password: "jjjj"
 
     });
     console.log("mysql has connected");
