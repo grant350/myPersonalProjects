@@ -64,7 +64,7 @@
 ]
 },
 {
-"QueueArn": "arn:aws:sqs:us-west-2:560721574155:nodesqs",
+"QueueArn": "arn:aws:sqs:us-west-2:375747567:nodesqs",
 "ApproximateNumberOfMessages": "0",
 "ApproximateNumberOfMessagesNotVisible": "0",
 "ApproximateNumberOfMessagesDelayed": "0",
