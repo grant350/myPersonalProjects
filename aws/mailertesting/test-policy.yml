@@ -1,0 +1,16 @@
+ policies:
+  - name: c7n-mailer-test
+    resource: sqs
+    filters:
+      - "tag:MailerTest": absent
+    actions:
+      - type: notify
+        template: "custom.html"
+        priority_header: "2"
+        subject: supermantesting
+        to:
+          - example@gmail.com
+          - example@gmail.com
+        transport:
+          type: sqs
+          queue: https://sqs.us-west-2.amazonaws.com/560721574155/c7n-mailer-test

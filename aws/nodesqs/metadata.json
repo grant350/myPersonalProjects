@@ -1,0 +1,81 @@
+{
+  "policy": {
+    "name": "nodesqs",
+    "resource": "sqs",
+    "filters": [
+      {
+        "Attachments": []
+      }
+    ],
+    "actions": [
+      {
+        "type": "notify",
+        "template": "superman.html",
+        "priority_header": "2",
+        "subject": "testing the c7n mailer",
+        "to": [
+          "soundbreakr1@gmail.com"
+        ],
+        "transport": {
+          "type": "sqs",
+          "queue": "https://sqs.us-west-1.amazonaws.com/560721574155/nodesqs"
+        }
+      }
+    ]
+  },
+  "version": "0.8.46.1",
+  "execution": {
+    "id": "23d458ce-cf82-47ea-89f1-8a244c4fe25d",
+    "start": 1585348930.677164,
+    "end_time": 1585348930.704433,
+    "duration": 0.02726888656616211
+  },
+  "config": {
+    "region": "us-west-2",
+    "regions": [
+      "us-west-2"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "560721574155",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": ".",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": "test-policy.yml",
+    "configs": [
+      "test-policy.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {},
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2020-03-27T15:42:10.703554",
+      "Value": 0,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2020-03-27T15:42:10.703570",
+      "Value": 0.0031888484954833984,
+      "Unit": "Seconds"
+    }
+  ]
+}
