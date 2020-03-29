@@ -1,0 +1,282 @@
+@import '../../styles.scss';
+@import '../../variables.scss';
+
+//bannerdis left to right transition
+
+.header-ct{
+width:100%;
+height:50px;
+display:flex;
+flex-wrap:wrap;
+align-items: center;
+background: $headerBackgroundColor;
+
+
+.underline_is-active{
+border-bottom: 1px solid #fff !important;
+}
+
+.logo-image{
+width:20%;height:100%;
+display:flex;
+align-items: center;
+align-items: center;
+  flex-wrap: wrap;
+
+img{
+width:40px;
+height:80%;
+border:2px solid transparent;
+border-radius:90px;
+margin-left:30px;
+}
+
+
+}
+
+button,span,p,a{
+  font-weight: 300;
+-webkit-font-smoothing: antialiased;
+
+}
+.site-nav a {
+    padding: 3px 10px;
+}
+
+
+@media screen and (min-width: 400px){
+span, a, p {
+    font-size: 17px;
+}
+}
+
+
+.site-nav__link:focus .site-nav__label, .site-nav__link:not([disabled]):hover .site-nav__label {
+    border-bottom-color: 1px solid #fff;
+    box-sizing: border-box;
+}
+
+.site_nav-ct{
+width:100%;
+height:50px;
+display: flex;
+align-items: center;
+text-decoration: none;
+justify-content: space-between;
+.search-ct{
+  width:100%; height:auto; min-height:60px;
+  background-color:red;
+  display:flex;
+   flex-wrap:wrap;
+   align-items:center;
+   position:relative;
+   justify-content:space-evenly;
+}
+.icons-ct{
+width:200px;
+height:100%;
+@include flex-box();
+@include flex-wrap(wrap);
+@include justify-content(flex-end);
+@include align-items(center);
+position:relative;
+margin-right:15px;
+
+button, a{
+  box-sizing:border-box;
+  color:white;
+width:40px!important;
+height:100%!important;
+padding-right:4px;
+background:transparent;
+border:none!important;
+padding-left:4px;
+@include flex-box();
+@include justify-content(center);
+@include align-items(center);
+
+&:focus{
+    outline: none!important;
+    filter: brightness(0.8)!important;
+    fill:rgba(0, 0, 0, 0.81);
+}
+
+svg{
+  width:26px;
+   color: white!important;
+ height:26px;
+ fill:white;
+}
+}
+}
+
+
+.search-items{display:flex;align-items:center;}
+
+.desktop-nav{
+width:100%;
+//min-width: 700px;
+height:100%;
+display:flex;flex-wrap:wrap;
+
+
+}
+}
+
+}
+
+#bignav{
+/*accessablenav*/
+    width: 50%;
+    flex-wrap:no-wrap;
+    min-width: 350px;
+}
+.site-nav{
+  position: relative;
+    padding: 0;
+    disply:block;
+    text-align: center;
+        padding: 3px;
+}
+.site-nav__link .icon-chevron-down {
+    width: calc(8em / 12);
+    height: calc(8em / 12);
+    margin-left: 0.5rem;
+    fill:white;
+    color:white;
+}
+
+.arrow{
+  background:transparent;
+  border:none;
+  color:white;
+  padding:none;
+  display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.icon {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    fill: white;
+}
+.site-nav li{
+  list-style-type: none;
+   display: block;
+    margin-bottom: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.site-nav a{
+padding: 3px 10px;
+    font-size: 17px;
+    font-family: "Original Surfer";
+    color:white;
+    text-decoration: none;
+
+}
+.site-nav__link {
+    display: block;
+    white-space: nowrap;
+}
+
+
+
+
+
+
+.banner_dis{
+height: 40px;
+    color: white;
+    background: $bannerBackground;
+    z-index: 1;
+    position: initial;
+    //animation: banner 3s 1;
+    display: flex;
+    width: 100%;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    text-align: center;
+p,a,span{
+  font-size: 14px;
+    display: inline;
+    margin: 0px;
+    color:white;
+    text-decoration: none;
+    padding-right: 10px;
+  }
+}
+
+
+@media   (max-width:750px){
+.middlenav{display:none;}
+.desktop-nav{
+  min-width:0px;
+    justify-content: flex-end!important;
+
+}
+}
+
+
+
+.banner-ct{
+background:$bannerBackground;
+   background: #BEBEBE;
+  background:$bannerDis-bc1;
+}
+
+.banner_dis{
+
+    height: 40px;
+    color: white;
+    background: $bannerBackground;
+    z-index: 1;
+    background: #BEBEBE;
+    background:$bannerDis-bc1;
+    position: relative;
+    //animation: banner 2s cubic-bezier(0.4, 0, 1, 1) 1;
+    @include maxw-flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+    @include flex-wrap(nowrap);
+    text-align: center;
+  a{text-decoration:underline!important;}
+  p,span,a{ font-size: 14px;
+    display: inline;
+    margin: 0px;
+    padding-right: 10px;
+    color: white;
+    font-weight: 300;
+    font-family: monospace;}
+}
+
+p, a, span {
+    font-family: "Original Surfer";
+}
+
+@media only screen and (max-width: 749px){
+
+.navbar {
+    display: none !important;
+}
+
+};

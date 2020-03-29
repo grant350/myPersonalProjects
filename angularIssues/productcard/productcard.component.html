@@ -1,0 +1,66 @@
+
+
+<div class="productcard-ct" >
+<!--
+<img src="{{ data.productslider[0].product.productImgUrl }}">
+<p > {{ data.productslider[0].product.title | json}} </p>
+-->
+</div>
+
+
+
+
+
+
+
+
+<!--
+<div class="grid-view-item product-card"  >
+
+         <a class=" grid-view-item__image-container " style="text-align:center" >
+    <span class="visually-hidden">{{ productsdata[i].title }}</span>
+  </a>
+
+    <div class="trap-image-grid">
+
+
+    <img id="{{ products.imgName }}"
+            class="product-card_img"
+            src="{{productsdata[i].productImgUrl }}"
+            alt="{{ productsdata[i].name }}">
+
+  </div>
+
+
+
+  <div class="h4 grid-view-item__title product-card__title" aria-hidden="false">
+    {{ productsdata[i].title }}
+  </div>
+
+<div class="price" >
+
+  <div class="price__regular" *ngIf="productsdata[i].sale == 'false' ">
+    <span class="price-item price-item--regular">
+            {{ productsdata[i].productPrice }}
+      <p style="color:red;" *ngIf="productsdata[i].productInventory <= 0;"> we are currently soldout
+      </p>
+      </span>
+  </div>
+
+  <div class="price__sale" *ngIf="productsdata[i].productSalePrice < productsdata[i].productPrice && productsdata[i].sale == 'true' && productsdata[i].productInventory >=1">
+
+    <span class="visually-hidden visually-hidden--inline">{{productsdata[i].productSalePrice}}</span>
+
+    <span class="price-item price-item--sale" >
+        {{ productsdata[i].productPrice }}
+      </span>
+      <span class="price-item__label" aria-hidden="true">on sale</span>
+
+  </div>
+</div>
+
+
+
+
+</div>
+-->
