@@ -1,4 +1,4 @@
-queue_url: https://sqs.us-west-2.amazonaws.com/560721574155/c7n-mailer-test
-role: arn:aws:iam::560721574155:role/c7n-mailer-test
-from_address: soundbreakr1@gmail.com
+queue_url: https://sqs.us-west-2.amazonaws.com/6375747567/c7n-mailer-test
+role: arn:aws:iam:: 6375747567:role/c7n-mailer-test
+from_address: empty
 region: us-west-2
