@@ -13,4 +13,4 @@
           - example@gmail.com
         transport:
           type: sqs
-          queue: https://sqs.us-west-2.amazonaws.com/560721574155/c7n-mailer-test
+          queue: https://sqs.us-west-2.amazonaws.com/6375747567/c7n-mailer-test

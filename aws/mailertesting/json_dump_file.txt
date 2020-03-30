@@ -1,10 +1,10 @@
 {
 "event": null,
-"account_id": "560721574155",
+"account_id": "6375747567",
 "account": "",
 "region": "us-west-2",
-"execution_id": "5bf797f7-dc2f-4b0b-8d4b-ad4ac3d54341",
-"execution_start": 1585468574.472925,
+"execution_id": "5bf797f7-dc2f-4b0b-8d4b-6375747567",
+"execution_start": 6375747567.472925,
 "policy": {
 "name": "c7n-mailer-test",
 "resource": "sqs",
@@ -20,12 +20,12 @@
 "priority_header": "2",
 "subject": "supermantesting",
 "to": [
-"soundbreakr1@gmail.com",
-"mitch2m2@yahoo.com"
+"Empty",
+"Empty"
 ],
 "transport": {
 "type": "sqs",
-"queue": "https://sqs.us-west-2.amazonaws.com/560721574155/c7n-mailer-test"
+"queue": "https://sqs.us-west-2.amazonaws.com/6375747567/c7n-mailer-test"
 }
 }
 ]
@@ -36,46 +36,46 @@
 "priority_header": "2",
 "subject": "supermantesting",
 "to": [
-"soundbreakr1@gmail.com",
-"mitch2m2@yahoo.com"
+"Empty",
+"Empty"
 ],
 "transport": {
 "type": "sqs",
-"queue": "https://sqs.us-west-2.amazonaws.com/560721574155/c7n-mailer-test"
+"queue": "https://sqs.us-west-2.amazonaws.com/6375747567/c7n-mailer-test"
 }
 },
 "resources": [
 {
-"QueueArn": "arn:aws:sqs:us-west-2:560721574155:c7n-mailer-test",
+"QueueArn": "arn:aws:sqs:us-west-2: 6375747567:c7n-mailer-test",
 "ApproximateNumberOfMessages": "0",
 "ApproximateNumberOfMessagesNotVisible": "0",
 "ApproximateNumberOfMessagesDelayed": "0",
-"CreatedTimestamp": "1585276576",
-"LastModifiedTimestamp": "1585276576",
+"CreatedTimestamp": "6375747567",
+"LastModifiedTimestamp": "6375747567",
 "VisibilityTimeout": "30",
 "MaximumMessageSize": "262144",
 "MessageRetentionPeriod": "345600",
 "DelaySeconds": "0",
 "ReceiveMessageWaitTimeSeconds": "0",
-"QueueUrl": "https://us-west-2.queue.amazonaws.com/560721574155/c7n-mailer-test",
+"QueueUrl": "https://us-west-2.queue.amazonaws.com/6375747567/c7n-mailer-test",
 "Tags": [],
 "c7n:MatchedFilters": [
 "tag:MailerTest"
 ]
 },
 {
-"QueueArn": "arn:aws:sqs:us-west-2:560721574155:nodesqs",
+"QueueArn": "arn:aws:sqs:us-west-2: 6375747567:nodesqs",
 "ApproximateNumberOfMessages": "0",
 "ApproximateNumberOfMessagesNotVisible": "0",
 "ApproximateNumberOfMessagesDelayed": "0",
-"CreatedTimestamp": "1585275260",
-"LastModifiedTimestamp": "1585275260",
+"CreatedTimestamp": "6375747567",
+"LastModifiedTimestamp": "6375747567",
 "VisibilityTimeout": "30",
 "MaximumMessageSize": "262144",
 "MessageRetentionPeriod": "345600",
 "DelaySeconds": "0",
 "ReceiveMessageWaitTimeSeconds": "0",
-"QueueUrl": "https://us-west-2.queue.amazonaws.com/560721574155/nodesqs",
+"QueueUrl": "https://us-west-2.queue.amazonaws.com/6375747567/nodesqs",
 "Tags": [],
 "c7n:MatchedFilters": [
 "tag:MailerTest"
